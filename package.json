@@ -1,6 +1,6 @@
 {
   "name": "extended-bee-queue",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "index.mjs",
   "type": "module",
   "license": "MIT",
