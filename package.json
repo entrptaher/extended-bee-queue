@@ -1,12 +1,16 @@
 {
-  "name": "bullmq-test",
+  "name": "extended-bee-queue",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.mjs",
+  "type": "module",
   "license": "MIT",
   "dependencies": {
     "bee-queue": "^1.5.0",
     "bullmq": "^3.12.0",
-    "ioredis": "^5.3.2",
+    "ioredis": "^5.3.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.17.18",
     "puppeteer": "^19.11.1"
   }
 }

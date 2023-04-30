@@ -1,4 +1,4 @@
-import Queue from "../lib/queue.mjs";
+import { Queue } from "../index.mjs";
 
 const queue = new Queue("example");
 

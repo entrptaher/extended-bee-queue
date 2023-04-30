@@ -1,4 +1,4 @@
-import { processor } from "../extended-bee-queue/index.mjs";
+import { processor } from "../index.mjs";
 import path from "path";
 import { fileURLToPath } from "url";
 

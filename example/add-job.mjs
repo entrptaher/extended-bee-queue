@@ -1,4 +1,4 @@
-import { Queue } from "../extended-bee-queue/index.mjs";
+import { Queue } from "../index.mjs";
 
 const queue = new Queue("example");
 
