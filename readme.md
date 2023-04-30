@@ -70,4 +70,4 @@ export default async function(job){
 
 ## Limitations
 
-The Extended Bee-Queue package requires the use of ES modules (ESM) or the type: module option in package.json due to the use of dynamic imports for sandboxing. This limitation may be resolved in future updates.
+The Extended Bee-Queue package requires the use of ES modules (ESM) or the `type: module` option in `package.json` due to the use of dynamic imports for sandboxing. This limitation may be resolved in future updates.
