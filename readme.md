@@ -7,21 +7,9 @@ The Extended Bee-Queue package is an extension of the original Bee-Queue package
 npm install https://github.com/entrptaher/extended-bee-queue
 ```
 
-## Usage
 Usage of the Extended Bee-Queue package is similar to the original Bee-Queue package, with some additional methods:
 
-### removeJob(jobId)
-
-Cancels a job with the given ID. If the job is already running, it will be killed immediately.
-```js
-import { Queue } from "../index.mjs";
-
-const queue = new Queue("example");
-
-queue.removeJob(jobId);
-```
-
-### addJob
+### add a task with `addJob`
 
 ```js
 import { Queue } from "../index.mjs";
@@ -35,7 +23,7 @@ queue.on("job succeeded", function (jobId, result) {
 const job = await queue.addJob({ x: 2, y: 3 });
 ```
 
-### Offload with `processor`
+### Process the task with `processor`
 
 Offload a job's code execution using the provided worker script path.
 
@@ -66,6 +54,17 @@ export default async function(job){
   await page.close()
   await browser.close();
 }
+```
+
+### remove a task with `removeJob(jobId)`
+
+Cancels a job with the given ID. If the job is already running, it will be killed immediately.
+```js
+import { Queue } from "../index.mjs";
+
+const queue = new Queue("example");
+
+queue.removeJob(jobId);
 ```
 
 ## Limitations
