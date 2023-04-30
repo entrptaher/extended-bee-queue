@@ -1,4 +1,5 @@
-## Extended Bee-Queue
+## Extended Bee-Queue (experiment)
+
 The Extended Bee-Queue package is an extension of the original Bee-Queue package, which provides additional features such as the ability to cancel processes and sandbox them. This is achieved using Redis Pub/Sub along with the Worker system from Node version 20.
 
 ## Installation
@@ -9,9 +10,16 @@ npm install https://github.com/entrptaher/extended-bee-queue
 ## Usage
 Usage of the Extended Bee-Queue package is similar to the original Bee-Queue package, with some additional methods:
 
-### cancel(jobId)
+### removeJob(jobId)
 
 Cancels a job with the given ID. If the job is already running, it will be killed immediately.
+```js
+import { Queue } from "../index.mjs";
+
+const queue = new Queue("example");
+
+queue.removeJob(jobId);
+```
 
 ### addJob
 
